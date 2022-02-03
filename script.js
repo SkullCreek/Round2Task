@@ -4,7 +4,9 @@ window.onload = () => {
     load.style.padding = "10000%";
     load.style.animation = "none";
     loader_con.style.animation = "fade .5s";
-    loader_con.style.display = "none";
+    setTimeout(function(){
+        loader_con.style.display = "none";
+    },800);
 }
 
 

@@ -216,7 +216,6 @@ ul li a {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  background-size: cover;
   margin-bottom: 4rem;
 }
 
@@ -271,7 +270,7 @@ ul li a {
 #carousel-sec #sub-carousel-sec {
   width: 100%;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 2rem;
   padding: 3rem 8rem 8rem 8rem;
   position: relative;
 }
@@ -286,14 +285,14 @@ ul li a {
 
 #carousel-sec #sub-carousel-sec #carousel {
   width: 100%;
-  height: 380px;
+  height: 38rem;
   overflow: hidden;
   position: relative;
 }
 
 #carousel-sec #sub-carousel-sec #carousel #carousel-scroll {
   width: 320%;
-  height: 290px;
+  height: 29rem;
   position: absolute;
   top: 20px;
   left: 0;
@@ -305,7 +304,7 @@ ul li a {
 }
 
 #carousel-sec #sub-carousel-sec #carousel #carousel-scroll article {
-  width: 400px;
+  width: 40rem;
   min-height: 100%;
   border-radius: 10px;
   padding: 6.2rem 4rem;
@@ -324,13 +323,13 @@ ul li a {
   width: 90%;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500d;
+  font-weight: 500;
   font-size: 1.6rem;
   color: white;
 }
 
 #carousel-sec #sub-carousel-sec #player {
-  width: 110px;
+  width: 11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,8 +337,8 @@ ul li a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  bottom: 50px;
-  right: 100px;
+  bottom: 5rem;
+  right: 10rem;
 }
 
 #carousel-sec #sub-carousel-sec #player img {
@@ -363,7 +362,7 @@ ul li a {
 #last-sec #sub-last-sec {
   width: 100%;
   background-color: black;
-  border-radius: 10px;
+  border-radius: 1rem;
   padding: 2.5rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,9 +424,9 @@ ul li a {
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
-  -webkit-box-shadow: 7px 5px 16px rgba(184, 51, 235, 0.8);
-          box-shadow: 7px 5px 16px rgba(184, 51, 235, 0.8);
-  border-radius: 50px;
+  -webkit-box-shadow: 0.7rem 0.5rem 1.6rem rgba(184, 51, 235, 0.8);
+          box-shadow: 0.7rem 0.5rem 1.6rem rgba(184, 51, 235, 0.8);
+  border-radius: 5rem;
 }
 
 #last-sec #sub-last-sec #last-sec-divs {
@@ -445,12 +444,12 @@ ul li a {
 
 #last-sec #sub-last-sec #last-sec-divs article {
   width: 48%;
-  height: 320px;
+  height: 32.0rem;
   background-color: #E2BBF0;
   margin-bottom: 3rem;
-  -webkit-box-shadow: 16px 15px 38px #7C33EB;
-          box-shadow: 16px 15px 38px #7C33EB;
-  border-radius: 20px;
+  -webkit-box-shadow: 1.6rem 1.5rem 3.8rem #7C33EB;
+          box-shadow: 1.6rem 1.5rem 3.8rem #7C33EB;
+  border-radius: 2rem;
   padding: 3rem;
 }
 
@@ -510,11 +509,11 @@ footer ul li a {
 
 #up {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 6rem;
+  height: 6rem;
   background-color: white;
-  bottom: 5px;
-  right: 5px;
+  bottom: .5rem;
+  right: .5rem;
   z-index: 99;
   display: -ms-grid;
   display: grid;
@@ -523,6 +522,10 @@ footer ul li a {
   -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   display: none;
+}
+
+#up img {
+  width: 2rem;
 }
 
 #loader-con {
@@ -540,8 +543,8 @@ footer ul li a {
 }
 
 #loader {
-  width: 60px;
-  height: 60px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   background-color: white;
   -webkit-animation: beat 2s infinite;
@@ -597,6 +600,84 @@ footer ul li a {
   100% {
     opacity: 0;
     display: none;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1280px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 880px) {
+  html {
+    font-size: 38%;
+  }
+}
+
+@media (max-width: 880px) and (min-width: 683px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media (max-width: 683px) and (min-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+  main #about-sec {
+    padding: 0 10rem 0 30rem;
+  }
+  main #member-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 50rem;
+  }
+  main #carousel-sec {
+    padding: 5rem 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 30%;
+  }
+  main #hero-sec img {
+    display: none;
+  }
+  main #about-sec {
+    padding: 0 10rem 0 30rem;
+  }
+  main #member-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30rem;
+  }
+  main #carousel-sec {
+    padding: 5rem 5rem;
+  }
+  main #sub-last-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main #sub-last-sec #last-sec-divs {
+    width: 100% !important;
+    padding-bottom: 8rem;
+  }
+  main #sub-last-sec #last-sec-con {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=styleSheet.css.map */
