@@ -6,7 +6,7 @@ window.onload = () => {
     loader_con.style.animation = "fade .5s";
     setTimeout(function(){
         loader_con.style.display = "none";
-    },800);
+    },500);
 }
 
 
@@ -73,4 +73,17 @@ window.onscroll = () => {
     else{
         document.getElementById("up").style.display = "none";
     }
+}
+
+const hambtn = document.getElementById("menu-bar");
+hambtn.onclick = () => {
+    document.getElementById("menu-bar-mob").style.display = "grid";
+    document.body.style.overflow = "hidden";
+}
+
+
+const cross = document.getElementById("menu-bar-2");
+cross.onclick = () => {
+    document.getElementById("menu-bar-mob").style.display = "none";
+    document.body.style.overflow = "";
 }
